@@ -1,0 +1,111 @@
+.home,
+.availableRooms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.reserve,
+.reservation {
+  background-color: var(--grey);
+}
+.reserve h2,
+.availability h2,
+.reservation h2 {
+  display: block;
+  width: 100%;
+  background-color: var(--color-secondary);
+  color: var(--white);
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 100;
+  padding-block: 10px;
+}
+
+.reserve button {
+  margin-block: 20px 7px;
+  background-color: var(--color-primary);
+  border: none;
+  font: inherit;
+  color: var(--white);
+  padding-block: 7px;
+  cursor: pointer;
+}
+.reserve form {
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+}
+#arrivalDate {
+  margin-right: 10px;
+}
+.reserve label {
+  text-transform: uppercase;
+  padding-block-start: 1.5rem;
+  padding-block-end: 6px;
+}
+.reserve select {
+  background-color: white;
+  border: none;
+  padding: 5px 5px;
+}
+.reserve .error {
+  display: none;
+  color: red;
+}
+.reserve .error.open {
+  display: block;
+}
+#arrivalDate,
+#departureDate {
+  border: none;
+  padding: 5px 5px;
+}
+
+.availability {
+  width: 75%;
+}
+
+.date,
+.date .rdrMonth {
+  width: 100% !important;
+}
+
+.rdrStartEdge.rdrEndEdge {
+  background-color: var(--color-primary);
+}
+#checkAvail {
+  display: none;
+}
+.availabilityButton {
+  width: 100%;
+  background-color: var(--color-secondary);
+  padding-block: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.availabilityButton > button {
+  margin-left: auto;
+  margin-right: 10px;
+  color: var(--white);
+  font: inherit;
+  background-color: var(--color-tertiary);
+  border: 1px solid var(--color-tertiary);
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 920px) {
+  .home {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .home > section {
+    width: 100%;
+  }
+}

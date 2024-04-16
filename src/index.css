@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #293c5a;
+  --color-secondary: #c6b367;
+  /* --color-tertiary: #b3a44f; */
+  --color-tertiary: #a27035;
+  --white: whitesmoke;
+  --grey: #f1f1f1;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(211, 211, 211);
+  font-family: "Pathway Extreme", sans-serif;
+}

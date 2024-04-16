@@ -1,0 +1,45 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  width: 100%;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+}
+.navImage {
+  display: block;
+  margin-right: auto;
+  /* margin-left: auto; */
+}
+.navImage > a {
+  display: flex;
+  align-items: center;
+}
+.navImage > a > img {
+  width: 40px;
+  height: 40px;
+}
+.navImage > a > h1 {
+  font-size: 2rem;
+  color: var(--white);
+  padding-left: 10px;
+}
+.cartIcon {
+  color: white;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.cartIcon > .bubble {
+  position: absolute;
+  min-width: 20px;
+  min-height: 20px;
+  top: -8px;
+  right: -5px;
+  background-color: red;
+  text-align: center;
+  border-radius: 10px;
+}
+
